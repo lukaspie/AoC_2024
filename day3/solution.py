@@ -29,6 +29,6 @@ part1 = extract_and_sum_muls(content, pattern1)
 print(part1)
 
 """Second puzzle"""
-pattern2 = re.compile(r"mul\((\d{1,3}),(\d{1,3})\)|(do\(\))|(don't\(\))")
+pattern2 = re.compile(r"mul\((\d+),(\d+)\)|(do\(\))|(don't\(\))")
 part2 = extract_and_sum_muls(content, pattern2)
 print(part2)
